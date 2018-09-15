@@ -93,11 +93,11 @@ class Home extends Component {
 				</section>
 
 				<section>
-				  <h2>Existing Solutions Google takes time and distance as a constraint to calculate the path. But do they care about Pollution?</h2><br/>
+				  <h2>Existing Solution : Google takes time and distance as a constraint to calculate the path. But they don't care about Pollution.</h2><br/>
 				</section>
 
 				<section className="wrapper">
-				  <h2><strong><b>BUT WE DO!</b></strong>
+				  <h2><strong><b>WE DO!</b></strong>
 				  <br/>	
 				  Our app will take Air Pollution as a constraint to compute the least polluted optimum path from one place to another. This will be calculated based on the real time data recieved.</h2>
 				</section>

@@ -210,9 +210,12 @@ body {
   height: 100%;
 }
 
+section {
+  color: white;
+}
+
 body {
   overflow: hidden;
-  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -280,11 +283,11 @@ h1 {
         color: #fff;
       }
 
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   font-size: 25px;
   display: block;
   text-align: center;

@@ -53,6 +53,7 @@ class Home extends Component {
 				<input type="radio" name="item6" checked={this.state.chk == "item6"} id="section6" onClick={this.changeHandler} />
 				<input type="radio" name="item7" checked={this.state.chk == "item7"} id="section7" onClick={this.changeHandler} />
 				<input type="radio" name="item8" checked={this.state.chk == "item8"} id="section8" onClick={this.changeHandler} />
+				<input type="radio" name="item9" checked={this.state.chk == "item9"} id="section9" onClick={this.changeHandler} />
 				<nav className="nav">
 				  <label className="nav__item" htmlFor="section1"></label>
 				  <label className="nav__item" htmlFor="section2"></label>
@@ -62,6 +63,7 @@ class Home extends Component {
 				  <label className="nav__item" htmlFor="section6"></label>
 				  <label className="nav__item" htmlFor="section7"></label>
 				  <label className="nav__item" htmlFor="section8"></label>
+				  <label className="nav__item" htmlFor="section9"></label>
 				</nav>
 				<section>
 				<div className="description">
@@ -116,6 +118,15 @@ class Home extends Component {
 				</section>
 
 				<section>
+					<h2>
+					In this choked up world, any way to reduce one's exposure to pollution is worth the while.<br/>
+					Even if you can't choose the least polluted route every time, its good to know which routes have consistently toxic air, as small regular changes can add up to major health benefits.
+					</h2>
+				</section>
+				<section>
+					<video width="71%" controls>
+    					<source src="/static/demo.mp4" type="video/mp4" />
+					</video>
 				</section>
 				<div className="cover"></div>
 			</div>

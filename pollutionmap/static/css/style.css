@@ -126,6 +126,21 @@ input[type="radio"]#section8:checked ~ .cover {
   background-color: #99c0bc;
 }
 
+input[type="radio"]#section9:checked ~ nav > label[for="section9"] {
+  background-color: white;
+}
+
+input[type="radio"]#section9:checked ~ section:nth-of-type(9) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type="radio"]#section9:checked ~ .cover {
+  background-color: #99c0bc;
+}
+
 .nav {
   position: fixed;
   z-index: 2;
@@ -194,6 +209,10 @@ section:nth-of-type(7) {
 
 section:nth-of-type(8) {
   background: red;
+}
+
+section:nth-of-type(9) {
+  background: #3c3c3c;
 }
 
 .cover {

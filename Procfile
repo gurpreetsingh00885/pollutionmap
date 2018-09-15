@@ -1,1 +1,1 @@
-web: gunicorn website2.wsgi
+web: gunicorn pollutionmap.wsgi

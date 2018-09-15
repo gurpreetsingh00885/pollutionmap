@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'website2.urls'
+ROOT_URLCONF = 'pollutionmap.urls'
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ WEBPACK_LOADER = {
     }
 }
 
-WSGI_APPLICATION = 'website2.wsgi.application'
+WSGI_APPLICATION = 'pollutionmap.wsgi.application'
 
 
 # Database

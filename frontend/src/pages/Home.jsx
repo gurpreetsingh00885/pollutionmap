@@ -73,14 +73,14 @@ class Home extends Component {
 				      	<div className="content" style={{marginLeft: '40px'}}>
 			              	<div className="content-center">
 				                  <div className="wrapper">
-			                  <a onClick={() => this.props.history.push('/map/')}>
-				                    <div className="title grow" style={{color: 'red', height: '80px', width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em', cursor: 'pointer'}}>FIND WAY</div>
+			                  <a onClick={() => this.props.history.push('/map/')} style={{textDecoration: 'none'}}>
+				                    <div className="title grow" style={{color: 'red',  width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em', cursor: 'pointer'}}>FIND WAY</div>
 				                  </a>
 
 				                  <br/> <br/> <br/>
 
-				                  <a onClick={() => this.props.history.push('/forecast/')}>
-				                    <div className="title grow" style= {{backgroundColor: 'red', color: 'white', height: '80px', width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em', cursor: 'pointer'}}>PREDICT</div>
+				                  <a onClick={() => this.props.history.push('/forecast/')} style={{textDecoration: 'none'}}>
+				                    <div className="title grow" style= {{backgroundColor: 'red', color: 'white', width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em', cursor: 'pointer'}}>PREDICT</div>
 				                  </a>
 
 				                  </div>

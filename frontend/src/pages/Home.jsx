@@ -33,7 +33,10 @@ const styles = theme => ({
 });
 
 class Home extends Component {
-	componentDidMount() {
+	state = { chk: 'item1' };
+
+	changeHandler = (e) => {
+		this.setState({ chk: e.target.name });
 	}
 
 	render() {
@@ -41,42 +44,80 @@ class Home extends Component {
 		const load = <div className={`react-skeleton-load animated ${classes.skeleton}`} />;
 		return (
 			<div>
-				<center>
-				<Grid container spacing={24} style={{ width: '90%'}}>
-					<Grid item md={4} className={classes.flexParent}>
-						<Img
-							width="95%"
-							src={"/static/img/laptop.svg"}
-							loader={load}
-						/>
-					</Grid>
-					<Grid item md={8} className={classes.flexParent}>
-						<div>
-							<Typography variant="display3" align="center" className={classes.title}> We're the <span className={classes.heading}>Pclub</span> </Typography>
-							<p align="center">
-								We are a bunch of students who love coding and admire open source with all our hearts.
-								We aim to create a platform which helps students gain assistance and mentorship and eventually
-								enhance their abilities.
-							</p>
-						</div>
-					</Grid>
-				</Grid>
-				</center>
-				<br />
-				<br />
-				<Typography variant="display2" className={classes.title}> <Label /> What we do </Typography>
-				<p>
-					We believe that programming is an essential skill and everyone should know at least the basics.
-					The field of study doesn't matter. We start with the very basics. We help students acquire this
-					essential skill.
-				</p>
-				<br />
-				<br />
-				<Typography variant="display2" className={classes.title}> <Label /> How we do it </Typography>
-				<p>
-					We hold sessions for which students volunteer. These sessions can be about any technology or
-					language. Some of them are <i>Competetive Programming, AI, Open Source,</i> etc.
-				</p>
+				
+				<input type="radio" name="item1" checked={this.state.chk == "item1"} id="section1" onClick={this.changeHandler} />
+				<input type="radio" name="item2" checked={this.state.chk == "item2"} id="section2" onClick={this.changeHandler} />
+				<input type="radio" name="item3" checked={this.state.chk == "item3"} id="section3" onClick={this.changeHandler} />
+				<input type="radio" name="item4" checked={this.state.chk == "item4"} id="section4" onClick={this.changeHandler} />
+				<input type="radio" name="item5" checked={this.state.chk == "item5"} id="section5" onClick={this.changeHandler} />
+				<input type="radio" name="item6" checked={this.state.chk == "item6"} id="section6" onClick={this.changeHandler} />
+				<input type="radio" name="item7" checked={this.state.chk == "item7"} id="section7" onClick={this.changeHandler} />
+				<input type="radio" name="item8" checked={this.state.chk == "item8"} id="section8" onClick={this.changeHandler} />
+				<nav className="nav">
+				  <label className="nav__item" htmlFor="section1"></label>
+				  <label className="nav__item" htmlFor="section2"></label>
+				  <label className="nav__item" htmlFor="section3"></label>
+				  <label className="nav__item" htmlFor="section4"></label>
+				  <label className="nav__item" htmlFor="section5"></label>
+				  <label className="nav__item" htmlFor="section6"></label>
+				  <label className="nav__item" htmlFor="section7"></label>
+				  <label className="nav__item" htmlFor="section8"></label>
+				</nav>
+				<section>
+				<div className="description">
+				  			<p>
+				  				"A guide to getting around city in the healthiest way possible by dodging air pollution."
+				  			</p>
+				  		</div>
+
+				      	<div className="content" style={{marginLeft: '40px'}}>
+			              	<div className="content-center">
+				                  <div className="wrapper">
+			                  <a onClick={() => this.history.push('/map/')}>
+				                    <div className="title grow" style={{color: 'red', height: '80px', width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em', }}>FIND WAY</div>
+				                  </a>
+
+				                  <br/> <br/> <br/>
+
+				                  <a onClick={() => this.history.push('/forecast/')}>
+				                    <div className="title grow" style= {{backgroundColor: 'red', color: 'white', height: '80px', width: '400px', fontSize: '60px', textAlign: 'center', paddingTop: '10px', paddingBottom: '10px', letterSpacing: '.1em',}}>PREDICT</div>
+				                  </a>
+
+				                  </div>
+			              	</div>
+			          	</div>
+				</section>
+
+				<section>
+				  <h2>"Air pollution causes more deaths than car crashes every year." - UN Survey</h2>
+				</section>
+
+				<section>
+				  <h2>Existing Solutions Google takes time and distance as a constraint to calculate the path. But do they care about Pollution?</h2><br/>
+				</section>
+
+				<section className="wrapper">
+				  <h2><strong><b>BUT WE DO!</b></strong>
+				  <br/>	
+				  Our app will take Air Pollution as a constraint to compute the least polluted optimum path from one place to another. This will be calculated based on the real time data recieved.</h2>
+				</section>
+
+				<section>
+				  <img src="/static/img/main_screen.png" style={{ height: '100%', width: '100%' }} alt="err" />
+				</section>
+
+				<section>
+				  <h2>Forecast the pollution level using time series analysis.<br/>Alert you on days when pollution is forecast to be high.</h2>
+				</section>
+
+				<section>
+				  <img src="/static/img/graph1.png" className="half_image" alt="err"/>
+				  <img src="/static/img/graph2.png" className="half_image" alt="err"/>
+				</section>
+
+				<section>
+				</section>
+				<div className="cover"></div>
 			</div>
 		);
 	}

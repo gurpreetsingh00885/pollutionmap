@@ -23,7 +23,8 @@ class PollutionToday extends Component {
 	  	L.Control.geocoder().addTo(mymap);
 	  	var th = this;
 	  	mymap.on('layeradd', function(ev) {
-    		$.get('http://api.airpollutionapi.com/1.0/aqi?lat=28.509287&lon=77.041536&APPID=97q682anvetpkc298jgmjgdb64', (e) => {
+	  		let latlng = ev.layer.getLatLng();
+    		$.get(`http://api.airpollutionapi.com/1.0/aqi?lat=${latlng.lat}&lon=${latlng.lng}&APPID=97q682anvetpkc298jgmjgdb64`, (e) => {
     			let params = (e.data.aqiParams);
     			for(let i = 0; i < params.length; i++) {
     				if (params[i].name == 'PM2.5') {
@@ -55,7 +56,7 @@ class PollutionToday extends Component {
 				        <h4 className="modal-title">Forecast Data</h4>
 				      </div>
 				      <div className="modal-body">
-				        <p><b>PM2.5 Conc. </b>{this.state.pm25} ppm</p>
+				        <p><b>PM2.5 Conc. </b>{this.state.pm25}</p>
 				        <hr/>
 				        {this.state.airquality}
 				        <hr/>

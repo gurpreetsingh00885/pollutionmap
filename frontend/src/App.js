@@ -36,7 +36,7 @@ const styles = theme => ({
     flexGrow: 1,
     marginTop: 0,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing.unit * 3,
+    padding: 0,
     overflow: 'scroll',
   },
 });

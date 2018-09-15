@@ -57,8 +57,8 @@ class App extends React.Component {
           <div className={classes.root}>
             <div className={classes.content}>
               <Switch>
-                <Route path={'/map/tomorrow/'} exact component={PollutionTomorrow} />
-                <Route path={'/map/today/'} exact component={PollutionToday} />
+                <Route path={'/predict/'} exact component={PollutionTomorrow} />
+                <Route path={'/map/'} exact component={PollutionToday} />
                 <Route path={'/home/'} exact component={Home} />
               </Switch>
             </div>

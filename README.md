@@ -1,5 +1,4 @@
-# Programming Club UIET
-This is the official website of the Programming Club at UIET, Panjab University.
+# PollutionMap
 
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -11,7 +10,7 @@ This is the official website of the Programming Club at UIET, Panjab University.
 #### Prerequisites
 
 ```
-python 3.5+
+python 3.7+
 node 10.x.x+
 npm 5.x+
 pipenv
@@ -20,7 +19,7 @@ pipenv
 1. Fork and clone this repo.
 
 ```
-$ git clone http://github.com/pclubuiet/website2.git
+$ git clone http://github.com/gurpreetsingh00885/pollutionmap.git
 ```
 
 2. Change working directory into the repo, activate your virtual environment and install the backend dependencies.

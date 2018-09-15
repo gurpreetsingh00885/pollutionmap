@@ -1,7 +1,7 @@
 {
-  "name": "Programming Club UIET",
-  "description": "This is the official PClub Webapp.",
-  "repository": "https://github.com/pclubuiet/website2",
+  "name": "Pollution Map",
+  "description": "Team Dirty Bits 2.0's hack for naggaro's Code-N-Counter 3.0",
+  "repository": "https://github.com/gurpreetsingh00885/",
   "success_url": "/home/",
   "env": {
     "SECRET_TOKEN": {

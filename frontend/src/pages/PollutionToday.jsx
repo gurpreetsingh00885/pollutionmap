@@ -83,11 +83,8 @@ class PollutionToday extends Component {
 		lineOptions: {
       		styles:[{color: 'black', opacity: 0.15, weight: 9}, {color: 'white', opacity: 0.8, weight: 6}, {color: 'black', opacity: 1, weight: 2}]
    		},
-  		router: L.Routing.google({
-    		travelMode: google.maps.TravelMode.DRIVING,
-    		unitSystem: google.maps.UnitSystem.METRIC,
-    		provideRouteAlternatives: true
-  		}),
+  		router: new L.Routing.openrouteservice('5b3ce3597851110001cf6248743d80055d31444d9775c6497f715bc8',
+  			{showAlternativeRoutes: true}),
 	})
 	.on('routesfound', function(e) {
         var routes = e.routes;
